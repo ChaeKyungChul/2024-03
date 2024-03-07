@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+   <form name="form" method="get">
+       <input type="text" id="searchtxt">
+       <select id="search">
+          <option>검색엔진선택</option>
+          <option value="google.com">구글</option>
+          <option value="daum.net">다음</option>
+          <option value="naver.com">네이버</option>
+       </select>
+
+   </form>
+   <script src="js/jquery.min.js"></script>
+   <script>
+     $(function(){
+        $('#search').change(function(){
+           const search = $("#search").val();
+           const stxt = $("#searchtxt").val();
+           let url;
+           switch(search){
+              case "google.com":
+                 url = "https://"+search+"/search?q="+stxt;                 
+              break;
+              case "daum.net":
+                 url = "https://search."+search+"/search?q="+stxt;
+              break;
+              case "naver.com":
+                 url = "https://search."+search+"/search.naver?query="+stxt;
+               break;
+           }
+           window.location.href=url;
+        });
+     });
+   </script>
+</body>
+</html>

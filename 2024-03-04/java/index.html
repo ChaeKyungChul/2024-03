@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                let oldchat = '';
+                let talk = $('#talk').val();
+                oldchat = $('.chatbox').html();
+                const chat = talk + "<br>" + oldchat
+                $('.chatbox').html(chat);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class ="chatbox">
+
+    </div>
+    <input type ="text" name="c"  id="talk">
+    <button>전송</button>
+</body>
+</html>
