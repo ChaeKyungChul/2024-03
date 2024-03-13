@@ -6,7 +6,6 @@ body{
     color:#333;
 }
 body.talk{
-    background-color:#ededed;
     padding:40px;
 }
 .sunflower-bold {
@@ -91,3 +90,5 @@ body.talk{
     padding:5px 10px;
     border-radius:5px;
   }
+  
+  

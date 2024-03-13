@@ -14,10 +14,14 @@
     <h1 class="text-center mt-5">My Java Chat</h1>
     <div class="chatbox">
         <div class="viewbox">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-           <iframe src="talk.html" class="iframe"></iframe>
+           <iframe name="talk" src="talk?username=username&first=ok" class="iframe"></iframe>
         </div>
         <div class="chatinsert">
-           <input type="text" name="c" id="talk" class="form-control">
+            <form name="chatform" method="post" target="talk">
+           <input type="hidden" name="username" value="username">
+           <input type="hidden" name="first" value="first">
+           <input type="text" name="talk" id="talk" class="form-control">
+        </form>
         </div>
     </div>
    

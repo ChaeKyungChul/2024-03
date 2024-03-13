@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채경철</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css" class="">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -13,12 +17,12 @@
 <!-- 1번 페이지 -->
         <!-- 헤더 -->
         <section>
-    <header>
+    <header class="animate__animated animate__bounce animate__delay-2s">
         <logo>
         <img src="img/맥주로고.jpg" alt="로고">
     </logo>
     <!--nav-->
-    <div class = "navbox">
+    <div class = "navbox ">
         <div class="nav">
             <ul>
                 <li>날짜
@@ -35,22 +39,32 @@
                         <li>전라도</li>
                     </ul>
                 </li>
-                <li>카테고리</li>
+                <li>FAQ
+                <ul>
+                    <li>입장안내</li>
+                    <li>주차장안내</li>
+                    <li>찾아오시는길</li>
+                </ul>
             </ul>
         </div>
     </div>
     </header>
     
-        <div class="imgbox">
+        <div class="imgbox animate__animated animate__pulse animate__delay-2s">
             <img src="img/메인사진1.jpg" alt="메인사진">
+            <div id="gas">
+            <img src="img/FESTIVAL.jpg" alt="FESTIVAL"></div>
         </div>
+        
         <div class="main">
+            <br>
             <h2> 사전 예매</h2>
-            
-            <div class="ticketbox">
+           
+            <div class="ticketbox animate__animated animate__pulse animate__delay-5s  animate__infinite animate__delay-2s  ">
              <div class="ticketbox1">   
             <img src="img/티켓1.jpg" alt="티켓1">
             <p> 티켓 가격 : 꽁짜</p>
+            
         </div>
         <div class="ticketbox1">   
             <img src="img/티켓2.jpg" alt="티켓2">
@@ -65,11 +79,40 @@
         </div>
 
     </section>
-
+    </div>
 
   <!-- 2번페이지-->
     <section>
+ <div class="event">
+   <br>
+    <h2> 공연.이벤트</h2>
+    <div class="eventbox">
+        
+        <img src="img/이벤트1.jpg" alt="event11">
+        <img src="img/이벤트2.jpg" alt="event12">
+        <img src="img/이벤트3.jpg" alt="event13">
+        <img src="img/이벤트5.jpg" alt="event13">
+        <img src="img/이벤트6.jpg" alt="event13">
+      
+    </div>
+    <div class="eventbox2">
+      <div class="eventimg2">
+        <img src="img/이벤트1.jpg" alt="event1">
+        <img src="img/이벤트2.jpg" alt="event2">
+        <img src="img/이벤트3.jpg" alt="event2">
+        <img src="img/이벤트4.jpg" alt="event2">
+        <img src="img/이벤트5.jpg" alt="event2">
+        <img src="img/이벤트6.jpg" alt="event2">
+    </div>
+    </div>
+    </div>
+   
 
+    </div>
+</div>
+    
+
+ </div>
 
     </section>
 
@@ -77,10 +120,48 @@
 
   <!--3번페이지-->
     <section>
+    <div class="gallry">
+        <br>
+        <h2 > 포토존 </h2>
+        <div class="gallryimg">
+            <img src="img/gallry/g1.jpg" alt="g1">
+            <img src="img/gallry/g2.jpg" alt="g2">
+            <img src="img/gallry/g3.jpg" alt="g3">
+            <img src="img/gallry/g4.jpg" alt="g4">
+            <img src="img/gallry/g5.jpg" alt="g5">
+            <img src="img/gallry/g6.jpg" alt="g6">
+            <img src="img/gallry/g7.jpg" alt="g7">
+            <img src="img/gallry/g8.jpg" alt="g8">
+            <img src="img/gallry/g9.jpg" alt="g9">
+            <img src="img/gallry/g10.jpg" alt="g10">
+            <img src="img/gallry/g11.jpg" alt="g11">
+            <img src="img/gallry/g12.jpg" alt="g12">
+
+        </div>
+
+
+    </div>
 
     </section>
 
     
+    
+</section>
+<section class="map" id="map" style="width:70%;height:400px; margin-left: auto; margin-right: auto; margin-bottom: 30px;">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c5d2c0e1bb380e72dc817c55d83f7f70"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.6446455, 126.6670966), // 
+        level: 4 
+    };
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+</script>
 </div>
+</section>
+<footer>
+    <p class="text-center pt-3" style="color:black; text-align: center;" >Copyright &copy; 채경철. All right reserved. maked 2024.</p>
+   
+</footer>
 </body>
 </html>
